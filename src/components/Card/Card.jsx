@@ -1,25 +1,16 @@
-import "./Card.css";
+// Card.jsx
 import React from "react";
+import "./Card.css";
 
-export default function Card() {
-
+export default function Card({ name, image }) {
   return (
     <div className="cardMain">
       <div className="cardUp">
-        <span className="criptoName">
-          df
-        </span>
-saf
+        <span className="characterName">{name}</span>
       </div>
-sad
       <div className="cardDown">
         <div className="downLeft">
-          <span className="currentPrice">
-          </span>
-          <span className="momentVariation">
-          </span>
-        </div>
-        <div className="downRight">
+          <img src={image} alt={name} className="characterImage" />
         </div>
       </div>
     </div>
