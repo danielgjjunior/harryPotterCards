@@ -11,6 +11,7 @@ import corvinal from "./assets/img/corvinal.jpg";
 import styles from "./App.module.css";
 import logoWhite from "./assets/img/logoWhite.png";
 import logoBlack from "./assets/img/logoBlack.png";
+import Card from "./components/Card/Card.jsx";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -44,29 +45,49 @@ function App() {
                 className={styles.logo}
               />
               <div
-                className={`${styles.nav} ${
-                  scrolled ? styles.navScrolled : ""
-                }`}
+                className={`${styles.nav} ${scrolled ? styles.navScrolled : ""
+                  }`}
               ></div>
               <SearchBar />
             </div>
           </div>
-          <div className={styles.title}></div>
-          <div className={styles.cards}></div>
+          <div className={styles.title}>
+
+            Harry
+          </div>
+          <div className={styles.cards}>
+
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+
+          </div>
           <div className={styles.footer}></div>
         </div>
       </Parallax>
       <Parallax bgImage={grifinoria} strength={200}>
         <div className={styles.page}>
           <div className={styles.title}></div>
-          <div className={styles.cards}></div>
+          <div className={styles.cards}>
+
+          <Card />
+            <Card />
+            <Card />
+            <Card />
+
+          </div>
           <div className={styles.footer}></div>
         </div>
       </Parallax>
       <Parallax bgImage={sonserina} strength={100}>
         <div className={styles.page}>
           <div className={styles.title}></div>
-          <div className={styles.cards}></div>
+          <div className={styles.cards}>
+
+
+
+          </div>
           <div className={styles.footer}></div>
         </div>
       </Parallax>
